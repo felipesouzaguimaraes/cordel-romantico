@@ -25,11 +25,12 @@
 body {
     background-color: darkgrey;
     min-height: 100vh;
+    
 }
 
 
-header > h1 {
-    background-color: black;
+header > h1 {    
+    background-image: linear-gradient(to right, black, rgb(187, 3, 3));
     color: white;
     font-family: var(--fonte1);
     text-align: center;
@@ -39,11 +40,21 @@ header > h1 {
 }
 
 header > p {
-    background-color: black;
+    background-image: linear-gradient(to right, black, rgb(187, 3, 3));
     color: white;
     font-family: var(--fonte3);
     text-align: center;
     padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 section {
@@ -53,36 +64,47 @@ section {
     padding-left: 30px;
     line-height: 1.5em;
     font-size: 3.5vw;
+    
 }
 
 section.normal {
     background-color: white;
     color: black;
+    
 }
 
 section.imagem {
     background-color: black;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;    
 }
 
 section.imagem > p {
-    background-color: rgb(176, 169, 169);
+    background-color: rgba(23, 22, 22, 0.6);
     display: inline-block;
     padding: 5px;
+    border-radius: 30px;
 }
 
 section#img01 {
-    background-image: url("../imagens/imagem.jpg");
+    background-image: url("../imagens/imagem5.jpg");
     background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 section#img02 {
-    background-image: url("../imagens/imagem.jpg");
-    background-position: center center;
+    background-image: url("../imagens/imagem2.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 footer {
-    background-color: black;
+    background-image: linear-gradient(to right, black, rgb(187, 3, 3));
     color: white;
     text-align: center;
     padding-top: 20px;
